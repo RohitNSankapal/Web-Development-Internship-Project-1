@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background for the body */
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, rgba(222, 92, 62, 0.8), rgba(248, 184, 139, 0.8)), 
+                url('https://img.freepik.com/premium-photo/businessman-holding-arrow-up-with-graph-business-analysis-business-development-financial-plan-strategy_117255-1887.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    padding: 120px 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 2;
+    animation: fadeIn 1s ease-in;
+}
+
+header h2 {
+    font-size: 2.8em;
+    margin: 10px 0;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    animation: fadeIn 1.2s ease-in;
+}
+
+header p {
+    font-size: 2em;
+    margin-top: 10px;
+    font-style: italic;
+    z-index: 2;
+    animation: fadeIn 1.4s ease-in;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(135deg, #ff8f5f, #ff7e5f);
+    padding: 15px 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-button {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 12px 100px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Sections */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.bucket-list {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bucket-list:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.bucket-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.bucket-list:hover::before {
+    opacity: 1;
+}
+
+.section-image {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+/* Sub Points */
+.sub-points p {
+    transition: color 0.3s, transform 0.3s;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.sub-points p:hover {
+    color: #ff7e5f;
+    transform: translateY(-3px);
+}
+
+/* Headings */
+h2 {
+    color: #ff7e5f;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Quotes Section */
+.quotes-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.quotes-section blockquote {
+    font-style: italic;
+    font-size: 1.5em;
+    color: #555;
+    border-left: 4px solid #ff7e5f;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #3a3939;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    header h2 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .nav-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .bucket-list {
+        padding: 20px;
+    }
+
+    .section-image {
+        max-height: 200px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
