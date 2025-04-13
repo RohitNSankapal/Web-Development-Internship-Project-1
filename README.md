@@ -1,2 +1,2 @@
-# Web-Development-Internship-Project-1
+# Web-Development
  Project Name: Personal Bucket List
